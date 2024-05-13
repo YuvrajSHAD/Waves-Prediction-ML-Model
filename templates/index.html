@@ -1,0 +1,308 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCEANDOC</title>
+    <link rel="shortcut icon" href="https://sidcupfamilygolf.com/wp-content/themes/puttosaurus/favicons/favicon-32x32.png"
+      type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <div id="loading-overlay">
+        <div id="loading-text">Loading...</div>
+    </div>
+    <div id="video-container">
+      <video id="video-background" autoplay muted loop>
+          <source src="/static/intro-2.webm" type="video/mp4">
+      </video>
+  </div>
+    <div id="nav">
+
+      <h4>oceandoc <i id="brandname" class="fa-brands fa-digital-ocean fa-fade" style="color: #ff9823;"></i> </h4>
+      <div class="navu">
+        <h4 class="navi">Home</h4>
+        <h4 class="navi">Ocean Facts</h4>
+        <h4 class="navi">News</h4>
+        <h4 class="navi">Podcasts</h4>
+        <h4 class="navi">Login/Signup</h4>
+      </div>
+    </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <video id="main-v" autoplay loop muted src="/static/op-transatlantic-d copy.mp4"></video>
+    <div id="main">
+      <div id="page1">
+        <h1>Ocean Waves Prediction</h1>
+        <h2>WELCOME TO OCEANDOC! <i id="brandname" class="fa-brands fa-digital-ocean" style="color: #ff9823;"></i></h2>
+        <p>
+          Sidcup Family Golf is a multipurpose golf facility located in Sidcup,
+          South East London. Passionate about technology, player development and
+          making golf fun and accessible to everyone.
+        </p>
+        <button type="submit" id="blur-btn">Run the ML Code</button>
+        <div id="dragme">
+          <div class="cir"></div>
+          <i class="ri-arrow-down-line"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700">
+            <defs>
+              <style>
+                .cls-1,
+                .cls-3 {
+                  fill: none;
+                }
+
+                .cls-1 {
+                  stroke: #ff9823;
+                  stroke-linecap: round;
+                  stroke-width: 20px;
+                  stroke-dasharray: 1081;
+                }
+
+                .cls-2 {
+                  stroke: none;
+                }
+              </style>
+            </defs>
+            <g id="Ellipse_1" data-name="Ellipse 1" class="cls-1">
+              <circle class="cls-2" cx="350" cy="350" r="350" />
+              <circle class="cls-3" cx="350" cy="350" r="342.5" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div id="page2">
+        <div id="scroller">
+          <div id="scroller-in">
+            <h4>Waves </h4>
+            <h4>Predcition</h4>
+            <h4>Using</h4>
+            <h4>LSTM</h4>
+            <h4>Model</h4>
+          </div>
+          <div id="scroller-in">
+            <h4>Waves </h4>
+            <h4>Predcition</h4>
+            <h4>Using</h4>
+            <h4>LSTM</h4>
+            <h4>Model</h4>
+          </div>
+        </div>
+
+        <div class="contain">
+          <div class="cardd">
+            <img src="/static/features/swaveh.png" alt="Image 1">
+
+          </div>
+          <div class="cardd">
+            <img src="/static/features/maxh.png" alt="Image 2">
+
+          </div>
+          <div class="cardd">
+            <img src="/static/features/wavepanel.png" alt="Image 3">
+
+          </div>
+          <div class="cardd">
+            <img src="/static/features/energywave.png" alt="Image 3">
+
+          </div>
+          <div class="cardd">
+            <img src="/static/features/true.png" alt="Image 3">
+
+          </div>
+          <div class="cardd">
+            <img src="/static/features/suftemp.png" alt="Image 3">
+
+          </div>
+        </div>
+
+        <div class="dbox">
+          <h1 id="head1">Visualization of the Real and Predicted Values</h1>
+          <div class="wrapperr">
+            <!-- <h1>Visualization of the Real and Predicted Values</h1> -->
+            <div class="containerr">
+              <!-- <h1>Visualization of the Real and Predicted Values</h1> -->
+              <input type="radio" name="slide" id="c1" checked>
+              <label for="c1" class="card">
+                <div class="row">
+                  <div class="icon">1</div>
+                  <div class="description">
+                    <!-- <h4>Winter</h4>
+                    <p>Winter has so much to offer -
+                      creative activities</p> -->
+                  </div>
+                </div>
+              </label>
+              <input type="radio" name="slide" id="c2">
+              <label for="c2" class="card">
+                <div class="row">
+                  <div class="icon">2</div>
+                  <div class="description">
+                    <!-- <h4>Digital Technology</h4>
+                    <p>Gets better every day -
+                      stay tuned</p> -->
+                  </div>
+                </div>
+              </label>
+              <input type="radio" name="slide" id="c3">
+              <label for="c3" class="card">
+                <div class="row">
+                  <div class="icon">3</div>
+                  <div class="description">
+                    <!-- <h4>Globalization</h4>
+                    <p>Help people all over the world</p> -->
+                  </div>
+                </div>
+              </label>
+              <input type="radio" name="slide" id="c4">
+              <label for="c4" class="card">
+                <div class="row">
+                  <div class="icon">4</div>
+                  <div class="description">
+                    <!-- <h4>New technologies</h4>
+                    <p>Space engineering becomes
+                      more and more advanced</p> -->
+                  </div>
+                </div>
+              </label>
+              <input type="radio" name="slide" id="c5">
+              <label for="c5" class="card">
+                <div class="row">
+                  <div class="icon">5</div>
+                  <div class="description">
+                    <!-- <h4>New technologies</h4>
+                    <p>Space engineering becomes
+                      more and more advanced</p> -->
+                  </div>
+                </div>
+              </label>
+              <input type="radio" name="slide" id="c6">
+              <label for="c6" class="card">
+                <div class="row">
+                  <div class="icon">6</div>
+                  <div class="description">
+                    <!-- <h4>New technologies</h4>
+                    <p>Space engineering becomes
+                      more and more advanced</p> -->
+                  </div>
+                </div>
+              </label>
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+        <div class="container">
+          <video autoplay loop muted plays-inline id="mp4">
+            <source src="/static/ai-d copy.mp4" type="video/mp4">
+          </video>
+          <div id="page3">
+            <table border="1">
+              <thead>
+                  <tr>
+                      <th colspan="2">Training Data Errors</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>RMSE_Hs:</td>
+                      <td><span id="train-rmse-hs"></span></td>
+                  </tr>
+                  <tr>
+                      <td>RMSE_Hmax:</td>
+                      <td><span id="train-rmse-hmax"></span></td>
+                  </tr>
+                  <tr>
+                      <td>RMSE_Tz:</td>
+                      <td><span id="train-rmse-tz"></span></td>
+                  </tr>
+                  <tr>
+                      <td>RMSE_Tp:</td>
+                      <td><span id="train-rmse-tp"></span></td>
+                  </tr>
+                  <tr>
+                      <td>RMSE_Dir:</td>
+                      <td><span id="train-rmse-dir"></span></td>
+                  </tr>
+                  <tr>
+                      <td>RMSE_SST:</td>
+                      <td><span id="train-rmse-sst"></span></td>
+                  </tr>
+              </tbody>
+          </table>
+          <br>
+          <table border="1">
+              <thead>
+                  <tr>
+                      <th colspan="2">Testing Data Errors</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>RMSE_Hs:</td>
+                      <td><span id="test-rmse-hs"></span></td>
+                  </tr>
+                  <tr>
+                      <td>RMSE_Hmax:</td>
+                      <td><span id="test-rmse-hmax"></span></td>
+                  </tr>
+                  <tr>
+                      <td>RMSE_Tz:</td>
+                      <td><span id="test-rmse-tz"></span></td>
+                  </tr>
+                  <tr>
+                      <td>RMSE_Tp:</td>
+                      <td><span id="test-rmse-tp"></span></td>
+                  </tr>
+                  <tr>
+                      <td>RMSE_Dir:</td>
+                      <td><span id="test-rmse-dir"></span></td>
+                  </tr>
+                  <tr>
+                      <td>RMSE_SST:</td>
+                      <td><span id="test-rmse-sst"></span></td>
+                  </tr>
+              </tbody>
+          </table>
+        
+            <i class="fa-solid fa-scroll" id="colon1"></i>
+        
+            <i class="fa-solid fa-scroll" id="colon2"></i>
+        </div>
+      </div>
+
+      <footer>
+        <ul class="icons">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-discord"></i></li>
+            <li><i class="fa-brands fa-x-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+        
+            <div class="footer-copyright">
+                <p>Made by Shivankit And Yuvraj</p>
+                <p>Copyright @ 2022 All Rights Reserved.</p>
+            </div>
+    </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+        integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/static/script.js"></script>
+
+  </html>
